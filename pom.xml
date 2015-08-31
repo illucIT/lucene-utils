@@ -37,11 +37,6 @@
 		<url>${scm.url}</url>
 	</scm>
 
-	<issueManagement>
-		<system>JIRA</system>
-		<url>https://jira.illucit.com</url>
-	</issueManagement>
-	
 	<developers>
 		<developer>
 			<id>csimon</id>
@@ -55,7 +50,7 @@
 		<!-- Release Info -->
 		<scm.connection>git@github.com:illucIT/lucene-utils.git</scm.connection>
 		<scm.url>https://github.com/illucIT/lucene-utils</scm.url>
-	
+
 		<!-- Target Java Compatibility -->
 		<maven.compiler.target>1.7</maven.compiler.target>
 		<maven.compiler.source>1.7</maven.compiler.source>
@@ -75,8 +70,6 @@
 
 	<build>
 		<finalName>${project.artifactId}</finalName>
-		<!-- <sourceDirectory>src</sourceDirectory> <testSourceDirectory>test</testSourceDirectory> 
-			<resources> <resource> <directory>resources</directory> </resource> </resources> -->
 		<plugins>
 			<plugin>
 				<artifactId>maven-source-plugin</artifactId>
