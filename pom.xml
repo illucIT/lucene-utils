@@ -7,29 +7,28 @@
 	<parent>
 		<groupId>com.illucit</groupId>
 		<artifactId>illucit-parent</artifactId>
-		<version>2</version>
+		<version>3</version>
 	</parent>
 
 	<artifactId>lucene-utils</artifactId>
-	<version>1.0</version>
+	<version>1.0.1</version>
 	<packaging>jar</packaging>
 
 	<name>Lucene-Utils</name>
 	<description>Adaption of String utilities from the Apache Lucene Project</description>
-	<url>http://www.illucit.com</url>
+	<url>https://www.illucit.com</url>
 
-	<organization>
-		<name>illucIT Software GmbH</name>
-		<url>http://www.illucit.com</url>
-	</organization>
+    <organization>
+        <name>illucIT Software GmbH</name>
+        <url>https://www.illucit.com</url>
+    </organization>
 
-	<licenses>
-		<license>
-			<name>Apache License, Version 2.0</name>
-			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-			<distribution>repo</distribution>
-		</license>
-	</licenses>
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
 
 	<scm>
 		<connection>scm:git:${scm.connection}</connection>
@@ -38,12 +37,14 @@
 	</scm>
 
 	<developers>
-		<developer>
-			<id>csimon</id>
-			<name>Christian Simon</name>
-			<email>simon@illucit.com</email>
-			<url>https://github.com/metaxmx</url>
-		</developer>
+        <developer>
+            <id>metaxmx</id>
+            <name>Christian Simon</name>
+            <email>simon@illucit.com</email>
+            <url>https://github.com/metaxmx</url>
+            <organization>illucIT Software GmbH</organization>
+            <organizationUrl>https://www.illucit.com</organizationUrl>
+        </developer>
 	</developers>
 
 	<properties>
@@ -69,7 +70,6 @@
 	</dependencies>
 
 	<build>
-		<finalName>${project.artifactId}</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-source-plugin</artifactId>
@@ -79,19 +79,5 @@
 			</plugin>
 		</plugins>
 	</build>
-
-	<repositories>
-		<!-- illucIT Company Repository -->
-		<repository>
-			<id>illucit</id>
-			<name>illucIT Public Maven Repository</name>
-			<url>http://repository.illucit.com</url>
-			<releases>
-				<enabled>true</enabled>
-				<updatePolicy>always</updatePolicy>
-				<checksumPolicy>warn</checksumPolicy>
-			</releases>
-		</repository>
-	</repositories>
 
 </project>
