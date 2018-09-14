@@ -31,7 +31,7 @@ To include this artifact as dependency of your Maven project in your `pom.xml`:
     <dependency>
         <groupId>com.illucit</groupId>
         <artifactId>lucene-utils</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
     </dependency>
     
 
