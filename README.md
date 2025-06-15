@@ -1,6 +1,6 @@
 # lucene-utils
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.illucit/lucene-utils.svg?label=Maven%20Central)](https://central.sonatype.com/artifact/com.illucit/instatrie)
+[![Maven Central](https://img.shields.io/maven-central/v/com.illucit/lucene-utils.svg?label=Maven%20Central)](https://central.sonatype.com/artifact/com.illucit/lucene-utils)
 
 This package contains a wrapper for the function `org.apache.lucene.analysis.miscellaneous.ASCIIFoldingFilter#foldToASCII`
 from the Apache Lucene project.
