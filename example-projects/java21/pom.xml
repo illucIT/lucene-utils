@@ -4,59 +4,23 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>com.illucit</groupId>
-        <artifactId>illucit-parent</artifactId>
-        <version>5</version>
-    </parent>
-
-    <artifactId>lucene-utils</artifactId>
+    <groupId>com.illucit</groupId>
+    <artifactId>lucene-utils-example-java21</artifactId>
     <version>1.2.0</version>
     <packaging>jar</packaging>
 
-    <name>Lucene-Utils</name>
-    <description>Adaption of String utilities from the Apache Lucene Project</description>
+    <name>Lucene-Utils-Example-Java21</name>
+    <description>Example for Lucene-Utils with Java21</description>
     <url>https://www.illucit.com</url>
 
-    <organization>
-        <name>illucIT Software GmbH</name>
-        <url>https://www.illucit.com</url>
-    </organization>
-
-    <licenses>
-        <license>
-            <name>The Apache License, Version 2.0</name>
-            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
-        </license>
-    </licenses>
-
-    <scm>
-        <connection>scm:git:git://${scm.connection}</connection>
-        <developerConnection>scm:git:ssh://${scm.connection}</developerConnection>
-        <url>${scm.url}</url>
-    </scm>
-
-    <developers>
-        <developer>
-            <id>metaxmx</id>
-            <name>Christian Simon</name>
-            <email>simon@illucit.com</email>
-            <url>https://github.com/metaxmx</url>
-            <organization>illucIT Software GmbH</organization>
-            <organizationUrl>https://www.illucit.com</organizationUrl>
-        </developer>
-    </developers>
-
     <properties>
-        <!-- Release Info -->
-        <scm.connection>github.com:illucIT/lucene-utils.git</scm.connection>
-        <scm.url>https://github.com/illucIT/lucene-utils/tree/master</scm.url>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!-- Target Java Compatibility -->
         <maven.compiler.release>21</maven.compiler.release>
 
         <!-- Junit -->
-        <junit5.jupiter.version>5.13.1</junit5.jupiter.version>
+        <junit5.jupiter.version>5.11.3</junit5.jupiter.version>
     </properties>
 
     <dependencyManagement>
@@ -73,6 +37,12 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.illucit</groupId>
+            <artifactId>lucene-utils</artifactId>
+            <version>1.2.0</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-launcher</artifactId>
             <scope>test</scope>
@@ -87,19 +57,16 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.14.0</version>
                 <configuration>
                     <release>${maven.compiler.release}</release>
                 </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-source-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.5.3</version>
             </plugin>
         </plugins>
     </build>

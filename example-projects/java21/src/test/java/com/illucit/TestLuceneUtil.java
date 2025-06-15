@@ -1,14 +1,14 @@
 package com.illucit;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static com.illucit.util.ASCIIUtils.foldToASCII;
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestLuceneUtil {
 
     @Test
     public void testLuceneUtils() {
-        assertEquals(foldToASCII("äbc"), "abc");
+        assertEquals("abc", foldToASCII("äbc"));
     }
 }

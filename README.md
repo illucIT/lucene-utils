@@ -1,6 +1,6 @@
 # lucene-utils
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.illucit/lucene-utils.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22com.illucit%22%20AND%20a:%22lucene-utils%22)
+[![Maven Central](https://img.shields.io/maven-central/v/com.illucit/lucene-utils.svg?label=Maven%20Central)](https://central.sonatype.com/artifact/com.illucit/instatrie)
 
 This package contains a wrapper for the function `org.apache.lucene.analysis.miscellaneous.ASCIIFoldingFilter#foldToASCII`
 from the Apache Lucene project.
@@ -12,13 +12,13 @@ to further Lucene classes. The static function `foldToASCII` itself is unmodifie
 
 ## Requirements
 
-`lucene-utils` is compiled with the Java7 compilation target, but it has support for Jigsaw (Java9+ module system).
+`lucene-utils` is compiled with the Java21 compilation target, and has support for Jigsaw (Java9+ module system).
 
 In order to use it in a modular project, add the module `com.illucit.lucene.utils` to your project.
 
-An example can be seen in the `module-info.java` of `example-projects/java10`.
+An example can be seen in the `module-info.java` of `example-projects/java21`.
 
-    module lucene.utils.java10example {
+    module lucene.utils.java21example {
         [...]
         requires com.illucit.lucene.utils;
     }
@@ -31,7 +31,7 @@ To include this artifact as dependency of your Maven project in your `pom.xml`:
     <dependency>
         <groupId>com.illucit</groupId>
         <artifactId>lucene-utils</artifactId>
-        <version>1.1.2</version>
+        <version>1.2.0</version>
     </dependency>
     
 
